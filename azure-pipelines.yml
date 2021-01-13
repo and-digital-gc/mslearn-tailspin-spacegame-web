@@ -4,7 +4,7 @@ trigger:
       - '*' # must quote since "*" is a YAML reserved character; we want a string
   
 pool:
-    vmImage: '*Windows-latest'
+    vmImage: 'Windows-latest'
     demands:
     - npm
   
