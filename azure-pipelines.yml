@@ -3,15 +3,15 @@ trigger:
     include:
       - '*' # must quote since "*" is a YAML reserved character; we want a string
   
-  pool:
+pool:
     vmImage: '*Windows latest*'
     demands:
     - npm
   
-  variables:
+variables:
     buildConfiguration: 'Release'
   
-  steps:
+steps:
   - task: UseDotNet@2
     displayName: 'Use .NET Core SDK 3.1.300'
     inputs:
